@@ -375,7 +375,13 @@ nav a:hover::after{
   clear: both;
 }
 
-
+.close-button{
+  position: fixed;
+  top: 50px;
+  right: 6%;
+  width: 30px;
+  height: 30px;
+}
 
 /*-------------------responsive-------------------------------------*/
 
