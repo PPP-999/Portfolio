@@ -357,7 +357,7 @@ nav a:hover::after{
   line-height: 1.5;
 }
 
-.text a{
+.description-text a{
   color: rgb(35, 67, 205);
   text-decoration: underline;
 }
