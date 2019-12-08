@@ -566,10 +566,6 @@ nav a:hover::after{
     padding: 0;
   }
 
-  h3 span{
-    font-size: 0.5rem;
-  }
-
   h4{
     font-size: calc(1.3rem + ((1vw - 0.32rem) * 0.7591));
     text-align: center;
