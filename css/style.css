@@ -1,0 +1,677 @@
+@charset "UTF-8";
+
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
+  width: 100%;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  color: #231815;
+}
+
+body,main,section,div,
+h1,h2,h3,h4,p,span,
+nav,ul,li,a,
+dl,dt,dd,
+img{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+ul{
+  margin: 0 auto;
+}
+
+li{
+  display: inline;
+  list-style-type: none;
+  margin: 0 15px 0 15px;
+}
+
+a{
+  text-decoration: none;
+  color: #231815;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+#allwrapper{
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+h1{
+  font-size: 2.8rem;
+  line-height: 2.6rem;
+  font-weight: 300;
+}
+
+h1 span{
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+}
+
+h2{
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+h3{
+  font-size: 2rem;
+  line-height: 1.7rem;
+  padding-left: 25px;
+}
+
+h3 span{
+  font-size: 0.8rem;
+}
+
+h4{
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  margin: 20px 0;
+}
+
+h4 span{
+  font-size: 0.9rem;
+}
+
+.br{
+  display: none;
+}
+
+/*-------------------header-------------------------------------*/
+
+
+header{
+  position: relative;
+  top: 400px;
+  z-index: 100;
+  text-align: center;
+  height: 40px;
+}
+
+nav{
+  top:0;
+  left:0;
+  background-color: #fff;
+}
+
+nav li{
+  line-height: 40px;
+}
+
+nav a{
+  position: relative;
+  color: #1B1B1B;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
+nav a:hover{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav a::after{
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+nav a:hover::after{
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/*-------------------top-------------------------------------*/
+
+
+#top{
+  text-align: center;
+  padding: 240px 0 300px;
+}
+
+/*-------------------main-common---------------------------------*/
+
+
+#skill,
+#works,
+#profile{
+  padding: 90px 0;
+}
+
+.list{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.box{
+  flex-basis: 25%;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  border-left: 1px solid #f2f2f2;
+}
+
+.box:last-child{
+  border-right: 1px solid #f2f2f2;
+}
+
+/*-------------------skill-------------------------------------*/
+
+
+#skill .list .icon{
+  padding: 0 30px;
+}
+
+.skill-text p{
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.skill-text p:nth-child(2){
+  margin-bottom: 10px;
+}
+
+#designs{
+  margin-top: 120px;
+}
+
+#designs .list{
+  width: 50%;
+  height: auto;
+}
+
+#designs .box{
+  flex-basis: 50%;
+}
+
+
+/*-------------------works-------------------------------------*/
+
+
+#works .box{
+  padding: 0 0;
+}
+
+#works .box a{
+  display: block;
+  padding: 20px 20px 0;
+}
+
+#works .box a:hover{
+  border: 1px solid #999;
+  padding: 19px 19px 0;
+}
+
+
+/*-------------------profile-------------------------------------*/
+
+
+.profile{
+  padding: 0 5%;
+}
+
+.profile dt,
+.profile dd{
+  font-size: 1.4rem;
+}
+
+.profile dd{
+  margin: 0 0 1em 30px;
+}
+
+
+/*-------------------modal-window-------------------------------------*/
+
+
+
+.content{
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.modal__bg{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal__content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  overflow-y:scroll;
+  max-width: 1280px;
+  width: 95%;
+  height: 90%;
+  padding: 60px 5%;
+  background: #fff;
+}
+
+.modal h1{
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.modal h1 span{
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.modal h2{
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+.vertical-box h2{
+  padding-left: 20px;
+}
+
+.description-area,
+.side-details,
+.photo-area{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  margin-bottom: 120px;
+}
+
+.description-box,
+.visual-box,
+.side-box{
+  width: 50%;
+  height: auto;
+  padding: 0 20px;
+}
+
+.vertical-box{
+  width: 100%;
+  height: auto;
+}
+
+.works-photo{
+  width: 50%;
+  height: auto;
+  padding: 0 20px;
+}
+
+.description-text p:nth-child(2){
+  margin-bottom: 0;
+}
+
+.description-text{
+  margin-top: 40px;
+}
+
+.description-text dl{
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.description-text dt{
+  float: left;
+  width: auto;
+  margin-right: 20px;
+}
+
+.description-text p{
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.text a{
+  color: rgb(35, 67, 205);
+  text-decoration: underline;
+}
+
+.a1,
+.a2,
+.a3{
+  margin-top: 13px;
+}
+
+.js-modal-close{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+
+
+/*-------------------responsive-------------------------------------*/
+
+
+
+/*-------------------tablet-------------------------------------*/
+
+
+
+@media only screen and (max-width:959px){
+
+  #top{
+    padding-bottom: 230px;
+  }
+
+  .list{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  #designs .list{
+    width: 100%;
+  }
+
+  #css3{
+    border-right: 1px solid #f2f2f2
+  }
+
+  .box{
+    flex-basis: 50%;
+    margin-bottom: 120px;
+  }
+
+  #works .box{
+    margin-bottom: 50px;
+  }
+
+  .icon{
+    text-align: center;
+  }
+
+  #skill .list .icon{
+    padding: 0 10%;
+  }
+
+  #cording .icon img{
+    max-width: 230px;
+    height: auto;
+  }
+
+  #designs .icon img{
+    max-width: 200px;
+  }
+
+  #works .icon img{
+    max-width: 350px;
+  }
+
+  .description-text p{
+    font-size: calc(1.1rem + ((1vw - 0.56rem) * 0.3333));
+  }
+
+  .profile dt, .profile dd{
+    font-size: calc(1.1rem + ((1vw - 0.56rem) * 0.3333))
+  }
+
+  .profile dt{
+    margin: 20px 0 5px 0;
+  }
+
+  .profile dd{
+    margin: 0 0 0 0;
+    line-height: calc(2rem + ((1vw - 0.56rem) * 0.3333))
+  }
+
+/*-------------------tablet-modal-------------------------------------*/
+
+  .modal h1{
+    font-size: 2.5rem;
+    line-height: 2.1rem;
+    text-align: center;
+  }
+
+  .modal h1 span{
+    font-size: 1.5rem;
+  }
+
+  .modal h2{
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .description-area{
+    width: 450px;
+    margin: 0 auto 120px;
+  }
+
+  .description-box{
+    width: 100%;
+    order: 2;
+    margin-top: 30px;
+  }
+
+  .description-text p{
+    text-align: left;
+  }
+
+  .description-text dl{
+    font-size: 1.1rem;
+  }
+
+  .description-text p{
+    font-size: 1.2rem;
+  }
+
+  .visual-box{
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+
+  .visual-box img{
+    max-width: 450px
+  }
+
+  #modal02 .visual-box img{
+    max-width: 350px;
+  }
+
+  .side-details{
+    display: block;
+    width: 450px;
+    margin: 0 auto
+  }
+
+  .side-box{
+    width: 100%;
+    margin: 0 auto 160px;
+  }
+
+  .res-box .photo-area{
+    text-align: center;
+  }
+
+  .res-box img{
+    max-width: 400px;
+  }
+
+  .vertical-details{
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .works-photo{
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+}
+
+
+
+/*-------------------phone-------------------------------------*/
+
+
+
+@media only screen and (max-width: 559px){
+
+  h1{
+    font-size: calc(2.2rem + ((1vw - 0.32rem) * 0.5692));
+    line-height: calc(2rem + ((1vw - 0.32rem) * 0.5692));
+  }
+
+  h1 span{
+    font-size: calc(1.4rem + ((1vw - 0.32rem) * 0.5692));
+  }
+
+  h2{
+    font-size: calc(2.1rem + ((1vw - 0.32rem) * 0.9487));
+    margin-bottom: 120px;
+  }
+
+  h3{
+    font-size: calc(1.7rem + ((1vw - 0.32rem) * 0.7591));
+    line-height: calc(1.5rem + ((1vw - 0.32rem) * 0.7591));
+    font-weight: 300;
+    text-align: center;
+    padding: 0;
+  }
+
+  h3 span{
+    font-size: 0.5rem;
+  }
+
+  h4{
+    font-size: calc(1.3rem + ((1vw - 0.32rem) * 0.7591));
+    text-align: center;
+  }
+
+  .list,
+  #designs .list{
+    margin: 60px auto 0;
+    width: 280px;
+  }
+
+  #css3,
+  .box:last-child{
+    border: none;
+  }
+
+  .box{
+    flex-basis: 100%;
+    border: none;
+  }
+
+  #cording .icon img{
+    max-width: 180px;
+  }
+
+  #designs .icon img{
+    max-width: 140px;
+  }
+
+  #works .icon img{
+    max-width: 350px;
+  }
+
+  #designs .box{
+    flex-basis: 100%;
+  }
+
+  #works .box{
+    margin-bottom: 80px;
+  }
+
+  .text p{
+    text-align: center;
+  }
+
+  .profile{
+    text-align: center;
+  }
+
+  .br{
+    display: block;
+  }
+
+  /*-------------------phone-modal-------------------------------------*/
+
+  .modal h1{
+    font-size: calc(1.8rem + ((1vw - 0.32rem) * 0.9487));
+    line-height: calc(1.4rem + ((1vw - 0.32rem) * 0.9487));
+  }
+
+  .modal h1 span{
+    font-size: calc(0.7rem + ((1vw - 0.32rem) * 0.9487));
+  }
+
+  .modal h2{
+    font-size: calc(1.7rem + ((1vw - 0.32rem) * 0.9487));
+  }
+
+  .text dl{
+    font-size: calc(0.8rem + ((1vw - 0.32rem) * 0.3795));
+  }
+
+  .description-area{
+    width: 280px;
+  }
+
+  .description-text p{
+    font-size: 1rem;
+  }
+
+  .visual-box img{
+    min-width: 170px;
+  }
+
+  .side-details{
+    width: 280px;
+  }
+
+  .side-box{
+    width: 100%;
+  }
+
+  .vertical-details{
+    width: 280px;
+  }
+
+  .photo-area{
+    margin-bottom: 60px;
+  }
+
+  .works-photo{
+    margin-bottom: 15px
+  }
+
+}
