@@ -397,7 +397,7 @@ nav a:hover::after{
 @media only screen and (max-width:959px){
 
   #top{
-    padding: 350px 0 500px;
+    padding: 330px 0 500px;
   }
 
   .list{
@@ -555,7 +555,7 @@ nav a:hover::after{
 @media only screen and (max-width: 559px){
 
   h1{
-    width: 160px;
+    width: 185px;
   }
 
   h2{
