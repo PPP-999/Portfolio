@@ -292,6 +292,8 @@ nav a:hover::after{
 }
 
 .modal h1 span{
+  width: 100%;
+  height: auto;
   font-size: 1.6rem;
   font-weight: 300;
   letter-spacing: 3px;
