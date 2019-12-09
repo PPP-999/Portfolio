@@ -555,12 +555,7 @@ nav a:hover::after{
 @media only screen and (max-width: 559px){
 
   h1{
-    font-size: calc(2.2rem + ((1vw - 0.32rem) * 0.5692));
-    line-height: calc(2rem + ((1vw - 0.32rem) * 0.5692));
-  }
-
-  h1 span{
-    font-size: calc(1.4rem + ((1vw - 0.32rem) * 0.5692));
+    width: 160px;
   }
 
   h2{
