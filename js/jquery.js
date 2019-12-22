@@ -57,7 +57,7 @@ $(function(){
 
 $(function(){
 
-    var effect_btm = 300;
+    var effect_btm = 100;
     var effect_move = 50;
     var effect_time = 800;
 
