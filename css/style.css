@@ -384,21 +384,9 @@ body.fixed {
   margin-right: 20px;
 }
 
-.description-text p{
-  font-size: 1.4rem;
-  line-height: 1.5;
-}
-
 .description-text a{
   color: rgb(35, 67, 205);
   text-decoration: underline;
-}
-
-.a1,
-.a2,
-.a3,
-.a4{
-  margin-top: 13px;
 }
 
 .js-modal-close{
@@ -473,10 +461,6 @@ body.fixed {
     max-width: 350px;
   }
 
-  .description-text p{
-    font-size: calc(1.1rem + ((1vw - 0.56rem) * 0.3333));
-  }
-
   .profile dt, .profile dd{
     font-size: calc(1.1rem + ((1vw - 0.56rem) * 0.3333))
   }
@@ -518,16 +502,8 @@ body.fixed {
     margin-top: 30px;
   }
 
-  .description-text p{
-    text-align: left;
-  }
-
   .description-text dl{
     font-size: 1.1rem;
-  }
-
-  .description-text p{
-    font-size: 1.2rem;
   }
 
   .visual-box{
@@ -674,10 +650,6 @@ body.fixed {
 
   .description-area{
     width: 280px;
-  }
-
-  .description-text p{
-    font-size: 1rem;
   }
 
   .visual-box img{
