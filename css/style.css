@@ -85,7 +85,7 @@ h3 span{
 h4{
   font-size: 1.4rem;
   line-height: 1.5rem;
-  margin: 20px 0;
+  margin: 20px 0 15px;
 }
 
 h4 span{
@@ -249,6 +249,7 @@ nav a:hover::after{
 
 .whatcharge{
   font-size: 1.0rem;
+  margin-bottom: 10px;
 }
 
 
