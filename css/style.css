@@ -247,6 +247,10 @@ nav a:hover::after{
   padding: 19px 19px 0;
 }
 
+.whatcharge{
+  font-size: 1.1rem;
+}
+
 
 /*-------------------profile-------------------------------------*/
 
