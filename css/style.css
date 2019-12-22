@@ -379,9 +379,13 @@ body.fixed {
 }
 
 .description-text dt{
-  float: left;
   width: auto;
-  margin-right: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.description-text dd{
+  margin-bottom: 10px;
 }
 
 .description-text a{
