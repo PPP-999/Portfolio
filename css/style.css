@@ -585,6 +585,11 @@ body.fixed {
     text-align: center;
   }
 
+  .whatcharge{
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
   .list,
   #designs .list{
     margin: 60px auto 0;
