@@ -632,6 +632,10 @@ body.fixed {
     margin-bottom: 80px;
   }
 
+  #works .box:last-child{
+    margin-right: 0;
+  }
+
   .text p{
     text-align: center;
   }
