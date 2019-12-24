@@ -442,7 +442,7 @@ body.fixed {
     margin-bottom: 120px;
   }
 
-  .box:last-child{
+  #works .box:last-child{
     margin-right: 50%;
   }
 
