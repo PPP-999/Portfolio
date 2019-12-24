@@ -442,6 +442,10 @@ body.fixed {
     margin-bottom: 120px;
   }
 
+  .box:last-child{
+    margin-right: 50%;
+  }
+
   #works .box{
     margin-bottom: 50px;
   }
